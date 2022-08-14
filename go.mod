@@ -1,4 +1,4 @@
-module github.com/cacing69/go-echo
+module go-echo
 
 go 1.15
 
