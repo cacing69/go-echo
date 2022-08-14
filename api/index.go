@@ -7,7 +7,7 @@ import (
 
 func Handler(w http.ResponseWriter, r *http.Request) {
 	// log.Println(*r)
-	w.Write("lorem")
+	w.Write([]byte("lorem ipsum"))
 }
 
 func GetRouter() *mux.Router {
