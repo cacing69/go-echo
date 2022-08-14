@@ -1,11 +1,11 @@
-package main
+package api
 
 import (
 	"net/http"
 	"github.com/labstack/echo/v4"
 )
 
-func Main() {
+func Api() {
 	e := echo.New()
 	e.GET("/api/", func(c echo.Context) error {
 		return c.String(http.StatusOK, "Hello, World!")
