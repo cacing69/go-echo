@@ -5,9 +5,9 @@ import (
 //   "github.com/gorilla/mux"
 )
 
-func HandlerUser(w http.ResponseWriter, r *http.Request) {
+func Index(w http.ResponseWriter, r *http.Request) {
 	// log.Println(*r)
-	w.Write([]byte("api/user"))
+	w.Write([]byte("api/users"))
 }
 
 // func GetRouter() *mux.Router {
