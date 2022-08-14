@@ -20,11 +20,6 @@ import (
 )
 
 func Handler(w http.ResponseWriter, r *http.Request) {
-  e := echo.New()
-
-  e.GET("/api/", func(c echo.Context) error {
-    return c.String(http.StatusOK, "Hello, World!")
-  })
-
-  e.Logger.Fatal(e.Start(":1323"))
+  // e := echo.New()
+  fmt.Fprintf(w, "<h1>Hello from Go!</h1>")
 }
