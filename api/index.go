@@ -1,4 +1,4 @@
-// package api
+package handler
 
 // import (
 // 	"net/http"
@@ -12,13 +12,14 @@
 // 	})
 // 	e.Logger.Fatal(e.Start(":1323"))
 // }
-package handler
+// package handler
 
 import (
-  "fmt"
-  "net/http"
+	"net/http"
+	"github.com/labstack/echo/v4"
 )
 
 func Handler(w http.ResponseWriter, r *http.Request) {
+  e := echo.New()
   fmt.Fprintf(w, "<h1>Hello from Go!</h1>")
 }
