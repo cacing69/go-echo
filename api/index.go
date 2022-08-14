@@ -12,6 +12,6 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 
 func GetRouter() *mux.Router {
 	r := mux.NewRouter()
-	r.HandleFunc("/", Handler).Methods(http.MethodGet)
+	r.HandleFunc("/api", Handler).Methods(http.MethodGet)
 	return r
 }

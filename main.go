@@ -1,13 +1,5 @@
 package main
 
-func getEnv(key string, def string) string {
-	val, ok := os.LookupEnv(key)
-	if !ok {
-		return def
-	}
-	return val
-}
-
 import (
 	"fmt"
 	"log"
@@ -16,6 +8,14 @@ import (
 	"time"
 	"github.com/cacing69/go-echo/api"
 )
+
+func getEnv(key string, def string) string {
+	val, ok := os.LookupEnv(key)
+	if !ok {
+		return def
+	}
+	return val
+}
 
 func main() {
 	p := getEnv("HTTP_PORT", "8000")
