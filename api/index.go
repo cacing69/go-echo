@@ -6,7 +6,7 @@ import (
 )
 
 func Handler(w http.ResponseWriter, r *http.Request) {
-	log.Println(*r)
+	// log.Println(*r)
 	w.Write("lorem")
 }
 
